@@ -5,20 +5,20 @@ import os
 
 def determine_padding(location):
     if location == "1":
-        padding_top_bottom = (0, 4096)
-        padding_left_right = (0, 4096)
+        padding_top_bottom = (0, 2048)
+        padding_left_right = (0, 2048)
     elif location == "2":
-        padding_top_bottom = (0, 4096)
-        padding_left_right = (4096, 0)
+        padding_top_bottom = (0, 2048)
+        padding_left_right = (2048, 0)
     elif location == "3":
-        padding_top_bottom = (4096, 0)
-        padding_left_right = (0, 4096)
+        padding_top_bottom = (2048, 0)
+        padding_left_right = (0, 2048)
     elif location == "4":
-        padding_top_bottom = (4096, 0)
-        padding_left_right = (4096, 0)
+        padding_top_bottom = (2048, 0)
+        padding_left_right = (2048, 0)
     elif location == "5":
-        padding_top_bottom = (2048, 2048)
-        padding_left_right = (2048, 2048)
+        padding_top_bottom = (1024, 1024)
+        padding_left_right = (1024, 1024)
     else:
         padding_top_bottom = (0, 0)
         padding_left_right = (0, 0)
